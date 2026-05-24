@@ -779,19 +779,73 @@
   /* ===== RESPONSIVE ===== */
   @media (max-width: 900px) {
     .nav-links { display: none; }
-    .main-nav { padding: 0 20px; }
+    .main-nav { padding: 0 16px; }
   }
   @media (max-width: 768px) {
-    .hero { padding: 60px 20px 80px; min-height: auto; }
-    .section, .how-section, .reviews-section, .area-section, .contact-section { padding: 60px 20px; }
-    .area-columns { grid-template-columns: 1fr; }
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    .award-bar { 
+      font-size: 0.65rem; 
+      letter-spacing: 0.5px; 
+      padding: 8px 12px;
+      line-height: 1.6;
+    }
+    .award-bar .sep { margin: 0 6px; }
+    .main-nav { 
+      padding: 0 12px; 
+      height: auto;
+      min-height: 64px;
+      flex-wrap: nowrap;
+      gap: 8px;
+    }
+    .nav-logo img { height: 44px; }
+    .nav-brand-name { font-size: 0.82rem; }
+    .nav-brand-sub { display: none; }
+    .nav-phone { display: none; }
+    .nav-cta { 
+      font-size: 0.75rem; 
+      padding: 8px 12px;
+      white-space: nowrap;
+    }
+    .service-bar { flex-wrap: wrap; }
+    .svc-link { 
+      padding: 8px 14px; 
+      font-size: 0.68rem;
+      flex: 1;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero { 
+      padding: 50px 16px 70px; 
+      min-height: auto;
+      width: 100%;
+    }
+    .hero h1 { font-size: clamp(1.8rem, 7vw, 2.5rem); }
+    .hero-badge { font-size: 0.7rem; padding: 6px 14px; }
+    .hero-trust-row { gap: 8px; }
+    .trust-pill { font-size: 0.75rem; padding: 6px 12px; }
+    .hero-cta-group { flex-direction: column; align-items: center; gap: 10px; }
+    .btn-primary, .btn-secondary { width: 100%; max-width: 300px; justify-content: center; font-size: 0.9rem; padding: 14px 24px; }
+    .section, .how-section, .reviews-section, .area-section, .contact-section { padding: 50px 16px; }
+    .services-grid { grid-template-columns: 1fr; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .area-columns { grid-template-columns: 1fr; gap: 30px; }
     .contact-grid { grid-template-columns: 1fr; }
     .form-row { grid-template-columns: 1fr; }
+    .owner-inner { grid-template-columns: 1fr; gap: 30px; text-align: center; }
+    .owner-photo { width: 200px; height: 200px; }
+    .owner-message .section-label { text-align: center; }
+    .owner-sig { justify-content: center; }
+    .awards-flex { gap: 30px; }
     .floating-cta { bottom: 14px; right: 14px; }
     .floating-btn { font-size: 0.78rem; padding: 11px 16px; }
-    .award-bar { font-size: 0.68rem; letter-spacing: 0.8px; }
-    .service-bar { flex-wrap: wrap; }
-    .svc-link { padding: 10px 18px; font-size: 0.7rem; }
+    .contact-pills { flex-direction: column; }
+    .footer-links { gap: 14px; }
+    .footer-nap { font-size: 0.78rem; }
   }
 
 
@@ -966,7 +1020,7 @@
   <span class="sep">|</span>
   Nextdoor Neighborhood Faves Winner — City of Saint Petersburg
   <span class="sep">|</span>
-  <span class="highlight">★</span> 5-Star Google Rated
+  <span class="highlight">★</span> 4.9 Stars · 137 Google Reviews
 </div>
 
 <!-- STICKY NAV -->
@@ -1111,7 +1165,7 @@
       <div class="trust-pill" role="listitem"><span class="pill-dot" aria-hidden="true"></span> Fully Licensed &amp; Insured</div>
       <div class="trust-pill" role="listitem"><span class="pill-dot" aria-hidden="true"></span> Background-Checked Staff</div>
       <div class="trust-pill" role="listitem"><span class="pill-dot" aria-hidden="true"></span> Satisfaction Guaranteed</div>
-      <div class="trust-pill" role="listitem"><span class="pill-dot" aria-hidden="true"></span> 5-Star Google Rated</div>
+      <div class="trust-pill" role="listitem"><span class="pill-dot" aria-hidden="true"></span> ⭐ 4.9 · 137 Google Reviews</div>
     </div>
 
     <div class="hero-cta-group">
@@ -1320,8 +1374,8 @@
     </div>
     <div class="award-item">
       <div class="award-icon-wrap" aria-hidden="true">⭐</div>
-      <div class="award-title">5-Star Google Rating</div>
-      <div class="award-sub">Consistently top-rated across Pinellas County</div>
+      <div class="award-title">4.9 Stars · 137 Reviews</div>
+      <div class="award-sub">Consistently top-rated across Pinellas County on Google</div>
     </div>
   </div>
 </section>
