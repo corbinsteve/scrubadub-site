@@ -1080,7 +1080,55 @@
     /* 4. Fix floating button position - above browser toolbar */
     .floating-cta { bottom: 85px !important; right: 14px !important; }
   }
+
+  /* ===== FAQ ===== */
+  .faq-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(10,31,92,0.06);
+    border: 1px solid var(--light-gray);
+  }
+  .faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--navy);
+    text-align: left;
+    gap: 16px;
+    transition: background 0.2s;
+  }
+  .faq-question:hover { background: var(--light-bg); }
+  .faq-icon {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--cyan-dark);
+    flex-shrink: 0;
+    transition: transform 0.3s;
+  }
+  .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+  .faq-answer {
+    display: none;
+    padding: 0 24px 20px;
+    color: var(--gray-text);
+    font-size: 0.93rem;
+    line-height: 1.75;
+  }
+  .faq-answer a { color: var(--cyan-dark); font-weight: 700; text-decoration: none; }
+  .faq-answer.open { display: block; }
 </style>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How much does cleaning cost in Tampa Bay?","acceptedAnswer":{"@type":"Answer","text":"Pricing is based on the type of clean (standard, deep, move-in/out, post-construction), total square footage, and number of bedrooms and bathrooms for residential. Commercial pricing is based on facility type, square footage, and scope of work. Call 727-619-2727 for a free quote."}},{"@type":"Question","name":"Are your cleaners background checked?","acceptedAnswer":{"@type":"Answer","text":"Yes. All cleaners are W-2 employees who undergo County Criminal, National Criminal, Sex Offender, SSN Trace, and Global Watchlist searches. We do not hire individuals with felonies or theft-related offenses. All staff are covered by liability and workers compensation insurance."}},{"@type":"Question","name":"What areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"All of Pinellas County for residential cleaning including St. Petersburg, Clearwater, Largo, Dunedin, and Palm Harbor. Pinellas and Hillsborough County for commercial services."}},{"@type":"Question","name":"Do you offer commercial cleaning?","acceptedAnswer":{"@type":"Answer","text":"Yes, we offer full commercial and janitorial services for offices and retail spaces throughout Pinellas and Hillsborough County."}},{"@type":"Question","name":"Are you licensed and insured?","acceptedAnswer":{"@type":"Answer","text":"Yes. We carry both general liability insurance and workers compensation insurance on all W-2 employees. You are fully protected on every cleaning."}},{"@type":"Question","name":"How do I get a quote?","acceptedAnswer":{"@type":"Answer","text":"Call or text us at 727-619-2727 for a custom price fast, no forms or waiting required."}}]}
+</script>
 
 <a href="#services" class="skip-link">Skip to main content</a>
 <!-- AWARD BAR -->
@@ -1106,6 +1154,7 @@
     <a href="#how-it-works">How It Works</a>
     <a href="#reviews">Reviews</a>
     <a href="#service-area">Service Area</a>
+    <a href="#faq">FAQ</a>
     <a href="#contact">Contact</a>
     <a href="#owner-heading">Meet Our Owner</a>
   </div>
@@ -1475,6 +1524,98 @@
 
 </section>
 
+
+<!-- FAQ SECTION -->
+<section class="section" id="faq" aria-labelledby="faq-heading" style="background:var(--light-bg);">
+  <p class="section-label">Common Questions</p>
+  <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+  <p class="section-sub">Everything you need to know about our cleaning services.</p>
+  <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        How much does cleaning cost in Tampa Bay?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Pricing is based on a few factors — primarily the type of clean and the size of your space.<br><br>
+        <strong>Residential cleaning</strong> is priced based on the type of service (standard clean, deep clean, move-in/move-out clean, or post-construction clean), total square footage, and the number of bedrooms and bathrooms.<br><br>
+        <strong>Commercial cleaning</strong> is priced based on the type of facility, total square footage, frequency of service, and scope of work.<br><br>
+        Call or text us at <a href="tel:7276192727">(727) 619-2727</a> and we'll get you a custom quote fast.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        Are your cleaners background checked?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Absolutely — and our process goes well beyond what most cleaning companies do. Unlike many companies that use independent contractors, we hire all of our cleaners as <strong>W-2 employees</strong>. Every team member undergoes a thorough pre-employment screening that includes:<br><br>
+        ✔ County Criminal Search<br>
+        ✔ National Criminal Search<br>
+        ✔ Sex Offender Search<br>
+        ✔ SSN Trace<br>
+        ✔ Global Watchlist Search<br><br>
+        We do not hire individuals with felony convictions or any theft-related offenses. All employees are fully insured, including <strong>liability insurance and workers' compensation</strong>. You get peace of mind knowing exactly who is in your home or business — every single time.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        What areas do you serve?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        <strong>Residential Cleaning</strong> — We serve all of Pinellas County including St. Petersburg, Clearwater, Largo, Dunedin, Palm Harbor, Safety Harbor, Tarpon Springs, Seminole, and Pinellas Park.<br><br>
+        <strong>Commercial &amp; Janitorial</strong> — We serve both Pinellas and Hillsborough County for commercial clients, including Tampa, Brandon, Riverview, Wesley Chapel, and all surrounding areas.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        Do you offer commercial cleaning?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Yes — we offer full commercial and janitorial services for offices, retail spaces, and commercial properties throughout Pinellas and Hillsborough County. Flexible scheduling including nights and weekends available.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        What is disinfectant misting?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Our disinfectant misting service uses hospital-grade disinfectants applied through an electrostatic misting system that coats all surfaces — including hard-to-reach areas that traditional cleaning misses — eliminating 99.9% of bacteria, viruses, and pathogens.<br><br>
+        This service is ideal for offices, schools, medical facilities, short-term rentals, and residential homes — especially following illness, high-traffic events, or as a preventive measure. The disinfectant is safe for all surfaces and materials and dries quickly with no residue.<br><br>
+        Available as a standalone service or as an add-on to any standard or deep clean for both residential and commercial clients.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        Are you licensed and insured?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Yes — Scrub A Dub Cleaning Pros is fully licensed and insured. We carry both <strong>general liability insurance</strong> and <strong>workers' compensation insurance</strong> on all of our W-2 employees. This means you are fully protected in the rare event of an accident or damage — and our team is covered too. Many cleaning companies skip workers' comp because they use contractors. We don't cut corners.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" aria-expanded="false" onclick="toggleFaq(this)">
+        How do I get a quote?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Call or text us at <a href="tel:7276192727">(727) 619-2727</a> and we will get you a custom price fast — no forms, no waiting.
+      </div>
+    </div>
+
+  </div>
+</section>
 <!-- FOOTER -->
 <footer role="contentinfo">
   <div class="footer-inner">
@@ -1536,5 +1677,20 @@
       if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
     });
   });
+</script>
+
+<script>
+function toggleFaq(btn) {
+  var answer = btn.nextElementSibling;
+  var isOpen = btn.getAttribute("aria-expanded") === "true";
+  document.querySelectorAll(".faq-question").forEach(function(b) {
+    b.setAttribute("aria-expanded", "false");
+    b.nextElementSibling.classList.remove("open");
+  });
+  if (!isOpen) {
+    btn.setAttribute("aria-expanded", "true");
+    answer.classList.add("open");
+  }
+}
 </script>
 </html>
