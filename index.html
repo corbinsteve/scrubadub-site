@@ -1124,6 +1124,13 @@
   }
   .faq-answer a { color: var(--cyan-dark); font-weight: 700; text-decoration: none; }
   .faq-answer.open { display: block; }
+
+  /* ===== ADA: Respect reduced motion preference ===== */
+  @media (prefers-reduced-motion: reduce) {
+    .bubble { animation: none !important; opacity: 0.3; }
+    .hero::before { animation: none !important; }
+    .fade-in { transition: none !important; opacity: 1 !important; transform: none !important; }
+  }
 </style>
 
 <script type="application/ld+json">
