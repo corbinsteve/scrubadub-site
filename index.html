@@ -690,6 +690,13 @@
     display: flex; align-items: center; gap: 8px; text-align: left;
   }
   .city-list { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+  .city-list li a {
+    color: var(--gray-text);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+  }
+  .city-list li a:hover { color: var(--cyan-dark); }
   .city-list li {
     display: flex; align-items: center; gap: 9px;
     font-weight: 600; color: var(--gray-text); font-size: 0.93rem; text-align: left;
@@ -1465,17 +1472,39 @@
     <div class="area-column">
       <h3>🏠 Residential — Pinellas County</h3>
       <ul class="city-list" aria-label="Residential service cities">
-        <li>St. Petersburg</li><li>Clearwater</li><li>Largo</li>
-        <li>Dunedin</li><li>Palm Harbor</li><li>Safety Harbor</li>
-        <li>Tarpon Springs</li><li>Seminole</li><li>Pinellas Park</li><li>New Port Richey (South)</li>
+        <li><a href="/house-cleaning-st-petersburg">St. Petersburg</a></li>
+        <li><a href="/house-cleaning-clearwater">Clearwater</a></li>
+        <li><a href="/house-cleaning-largo">Largo</a></li>
+        <li><a href="/house-cleaning-dunedin">Dunedin</a></li>
+        <li><a href="/house-cleaning-palm-harbor">Palm Harbor</a></li>
+        <li><a href="/house-cleaning-safety-harbor">Safety Harbor</a></li>
+        <li><a href="/house-cleaning-tarpon-springs">Tarpon Springs</a></li>
+        <li><a href="/house-cleaning-seminole">Seminole</a></li>
+        <li><a href="/house-cleaning-pinellas-park">Pinellas Park</a></li>
+        <li><a href="/house-cleaning-gulfport">Gulfport</a></li>
+        <li><a href="/house-cleaning-st-pete-beach">St. Pete Beach</a></li>
+        <li><a href="/house-cleaning-madeira-beach">Madeira Beach</a></li>
+        <li><a href="/house-cleaning-treasure-island">Treasure Island</a></li>
+        <li><a href="/house-cleaning-indian-rocks-beach">Indian Rocks Beach</a></li>
+        <li><a href="/house-cleaning-kenneth-city">Kenneth City</a></li>
+        <li><a href="/house-cleaning-new-port-richey">New Port Richey (South)</a></li>
       </ul>
     </div>
     <div class="area-column">
       <h3>🏢 Commercial — Pinellas + Hillsborough</h3>
       <ul class="city-list" aria-label="Commercial service cities">
-        <li>St. Petersburg</li><li>Tampa</li><li>Clearwater</li>
-        <li>Brandon</li><li>Largo</li><li>Plant City</li>
-        <li>Dunedin</li><li>Riverview</li><li>Palm Harbor</li><li>Wesley Chapel</li>
+        <li><a href="/house-cleaning-st-petersburg">St. Petersburg</a></li>
+        <li><a href="/house-cleaning-clearwater">Clearwater</a></li>
+        <li><a href="/house-cleaning-largo">Largo</a></li>
+        <li><a href="/house-cleaning-dunedin">Dunedin</a></li>
+        <li><a href="/house-cleaning-palm-harbor">Palm Harbor</a></li>
+        <li><a href="/house-cleaning-oldsmar">Oldsmar</a></li>
+        <li><a href="/house-cleaning-safety-harbor">Safety Harbor</a></li>
+        <li><a href="/house-cleaning-tarpon-springs">Tarpon Springs</a></li>
+        <li>Tampa</li>
+        <li>Brandon</li>
+        <li>Riverview</li>
+        <li>Wesley Chapel</li>
       </ul>
     </div>
   </div>
@@ -1641,6 +1670,28 @@
       <a href="tel:7276192727">(727) 619-2727</a> &nbsp;·&nbsp;
       <a href="mailto:cleaning@scrubadubcleaningpros.com">cleaning@scrubadubcleaningpros.com</a>
     </p>
+    <div style="margin-bottom:20px;">
+      <p style="color:rgba(255,255,255,0.5);font-size:0.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;">Cities We Serve</p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px 16px;">
+        <a href="/house-cleaning-st-petersburg" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">St. Petersburg</a>
+        <a href="/house-cleaning-clearwater" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Clearwater</a>
+        <a href="/house-cleaning-largo" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Largo</a>
+        <a href="/house-cleaning-dunedin" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Dunedin</a>
+        <a href="/house-cleaning-palm-harbor" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Palm Harbor</a>
+        <a href="/house-cleaning-safety-harbor" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Safety Harbor</a>
+        <a href="/house-cleaning-tarpon-springs" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Tarpon Springs</a>
+        <a href="/house-cleaning-seminole" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Seminole</a>
+        <a href="/house-cleaning-pinellas-park" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Pinellas Park</a>
+        <a href="/house-cleaning-gulfport" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Gulfport</a>
+        <a href="/house-cleaning-st-pete-beach" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">St. Pete Beach</a>
+        <a href="/house-cleaning-madeira-beach" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Madeira Beach</a>
+        <a href="/house-cleaning-treasure-island" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Treasure Island</a>
+        <a href="/house-cleaning-oldsmar" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Oldsmar</a>
+        <a href="/house-cleaning-indian-rocks-beach" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Indian Rocks Beach</a>
+        <a href="/house-cleaning-new-port-richey" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">New Port Richey</a>
+        <a href="/house-cleaning-kenneth-city" style="color:rgba(255,255,255,0.55);font-size:0.78rem;text-decoration:none;">Kenneth City</a>
+      </div>
+    </div>
     <p class="footer-copy">© 2026 Scrub A Dub Cleaning Pros. All rights reserved. Serving Pinellas &amp; Hillsborough County, Florida.</p>
   </div>
 </footer>
