@@ -855,7 +855,14 @@
     .awards-flex { gap: 30px; }
     .floating-cta { bottom: 14px; right: 14px; }
     .floating-btn { font-size: 0.78rem; padding: 11px 16px; }
-    .contact-pills { flex-direction: column; }
+    .contact-pills { flex-direction: column; width: 100%; }
+    .contact-pill { width: 100%; box-sizing: border-box; }
+    .contact-pill .contact-detail-text a,
+    .contact-pill .contact-detail-text span { 
+      white-space: normal; 
+      word-break: break-word;
+      font-size: 0.82rem;
+    }
     .footer-links { gap: 14px; }
     .footer-nap { font-size: 0.78rem; }
   }
@@ -1012,21 +1019,37 @@
     gap: 14px;
     background: white;
     border-radius: 14px;
-    padding: 18px 24px;
+    padding: 16px 20px;
     box-shadow: 0 2px 12px rgba(10,31,92,0.07);
     border: 1px solid var(--light-gray);
     white-space: nowrap;
   }
+  .contact-pill .contact-detail-icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-pill .contact-detail-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+  }
   .contact-pill .contact-detail-text a,
   .contact-pill .contact-detail-text span {
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--gray-text);
+    line-height: 1.3;
   }
   .contact-pill .contact-detail-text strong {
     display: block;
     font-size: 0.85rem;
+    font-weight: 800;
     color: var(--navy);
-    margin-bottom: 2px;
+    line-height: 1.3;
   }
   .fade-in { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
@@ -1450,7 +1473,7 @@
 
 <!-- FLOATING CTA -->
 <div class="floating-cta" aria-label="Quick contact options">
-  <a href="tel:7276192727" class="floating-btn fb-green" aria-label="Call or text for instant quote">📞 Call or Text for a Quote</a>
+  <a href="tel:7276192727" class="floating-btn fb-green" aria-label="Call or text for instant quote">Call or Text for a Quote</a>
 </div>
 
 <!-- LOCAL SEO SCHEMA -->
