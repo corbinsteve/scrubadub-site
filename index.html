@@ -827,12 +827,13 @@
     .accent-green { font-size: clamp(0.85rem, 4.5vw, 1.8rem) !important; white-space: nowrap !important; overflow: hidden; text-overflow: clip; }
     .hero-sub { font-size: 0.9rem; padding: 0 8px; width: 100%; }
     .hero-badge { font-size: 0.65rem; padding: 6px 12px; margin-bottom: 16px; }
-    .nav-cta { font-size: 0.7rem; padding: 7px 10px; }
+    .nav-cta { font-size: 0.7rem; padding: 7px 10px; max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .nav-brand-name { font-size: 0.78rem; }
+    .nav-right { gap: 6px; }
     .hero-badge { font-size: 0.7rem; padding: 6px 14px; }
     .hero-trust-row { gap: 8px; }
     .trust-pill { font-size: 0.75rem; padding: 6px 12px; }
-    .hero-cta-group { flex-direction: column; align-items: center; gap: 10px; }
+    .hero-cta-group { flex-direction: column; align-items: center; gap: 10px; margin-top: 20px; }
     .btn-primary, .btn-secondary { width: 100%; max-width: 300px; justify-content: center; font-size: 0.9rem; padding: 14px 24px; }
     .section, .how-section, .reviews-section, .area-section, .contact-section { padding: 50px 16px; }
     .services-grid { grid-template-columns: 1fr; }
@@ -1159,10 +1160,10 @@
     <h1>
       Tampa Bay's Most Trusted<br>
       <span class="accent-cyan">Cleaning Pros.</span><br>
-      <span class="accent-green" style="display:block;font-size:clamp(0.9rem, 4vw, 2.2rem);text-align:center;white-space:nowrap;transform:scale(min(1, calc(100vw / 400)));transform-origin:center;">Residential · Commercial · Disinfecting</span>
+      <span class="accent-green" style="display:block;font-size:clamp(0.85rem, 3.5vw, 2.2rem);text-align:center;white-space:nowrap;">Residential · Commercial · Disinfecting</span>
     </h1>
 
-    <p class="hero-sub" style="width:100%;max-width:100%;padding:0 8px;">
+    <p class="hero-sub" style="width:100%;max-width:100%;padding:0 8px;margin-top:16px;">
       Serving all of Pinellas &amp; Hillsborough County.<br><br>Background-checked, insured professionals who clean your home or business like it's their own. Get your custom quote in seconds — our Smart Quote System pulls your square footage automatically.
     </p>
 
