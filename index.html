@@ -1061,6 +1061,25 @@
   }
   .fade-in { opacity: 0; transform: translateY(28px); transition: opacity 0.6s ease, transform 0.6s ease; }
   .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* ===== CRITICAL MOBILE FIXES ===== */
+  @media (max-width: 768px) {
+    /* 1. Hide nav CTA button completely */
+    .nav-cta { display: none !important; }
+    .nav-phone { display: flex !important; font-size: 0.75rem; padding: 6px 10px; }
+    
+    /* 2. Fix white dome - shrink it so buttons show above it */
+    .hero::after { height: 40px !important; }
+    .hero { padding-bottom: 100px !important; }
+    
+    /* 3. Fix contact pill text - all left aligned */
+    .contact-pill { text-align: left !important; align-items: center !important; }
+    .contact-pill .contact-detail-text { text-align: left !important; align-items: flex-start !important; }
+    .contact-pill .contact-detail-text * { text-align: left !important; }
+    
+    /* 4. Fix floating button position - above browser toolbar */
+    .floating-cta { bottom: 85px !important; right: 14px !important; }
+  }
 </style>
 
 <a href="#services" class="skip-link">Skip to main content</a>
