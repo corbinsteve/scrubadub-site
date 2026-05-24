@@ -764,6 +764,7 @@
   .floating-cta {
     position: fixed; bottom: 26px; right: 26px; z-index: 999;
     display: flex; flex-direction: column; gap: 10px; align-items: flex-end;
+    pointer-events: auto;
   }
   .floating-btn {
     display: flex; align-items: center; gap: 9px;
@@ -805,27 +806,32 @@
     .nav-brand-name { font-size: 0.82rem; }
     .nav-brand-sub { display: none; }
     .nav-phone { display: none; }
+    .main-nav { overflow: hidden; }
     .nav-cta { 
       font-size: 0.75rem; 
       padding: 8px 12px;
       white-space: nowrap;
     }
     .service-bar { flex-wrap: wrap; }
+    .service-bar { flex-wrap: nowrap; }
     .svc-link { 
-      padding: 8px 14px; 
-      font-size: 0.68rem;
+      padding: 6px 8px; 
+      font-size: 0.6rem;
       flex: 1;
       justify-content: center;
       text-align: center;
+      letter-spacing: 0.3px;
+      border-right: 1px solid rgba(255,255,255,0.07);
     }
+    .svc-dot { width: 6px; height: 6px; }
     .hero { 
-      padding: 50px 16px 70px; 
+      padding: 30px 16px 60px; 
       min-height: auto;
       width: 100%;
     }
     .hero h1 { font-size: clamp(1.6rem, 7vw, 2.5rem); }
     .accent-green { font-size: clamp(0.85rem, 4.5vw, 1.8rem) !important; white-space: nowrap !important; overflow: hidden; text-overflow: clip; }
-    .hero-sub { font-size: 0.9rem; padding: 0 8px; width: 100%; }
+    .hero-sub { font-size: 0.85rem; padding: 0 4px; width: 100%; line-height: 1.6; }
     .hero-badge { font-size: 0.65rem; padding: 6px 12px; margin-bottom: 16px; }
     .nav-cta { font-size: 0.7rem; padding: 7px 10px; max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .nav-brand-name { font-size: 0.78rem; }
@@ -976,6 +982,13 @@
     .owner-sig { justify-content: center; }
   }
 
+  .nav-cta-short { display: none; }
+  .nav-cta-full { display: inline; }
+  @media (max-width: 480px) {
+    .nav-cta-short { display: inline; }
+    .nav-cta-full { display: none; }
+    .nav-cta { max-width: none; overflow: visible; }
+  }
   .skip-link {
     position: absolute;
     top: -100px;
