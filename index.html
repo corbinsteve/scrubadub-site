@@ -823,7 +823,12 @@
       min-height: auto;
       width: 100%;
     }
-    .hero h1 { font-size: clamp(1.8rem, 7vw, 2.5rem); }
+    .hero h1 { font-size: clamp(1.6rem, 7vw, 2.5rem); }
+    .accent-green { font-size: clamp(0.85rem, 4.5vw, 1.8rem) !important; white-space: nowrap !important; overflow: hidden; text-overflow: clip; }
+    .hero-sub { font-size: 0.9rem; padding: 0 8px; width: 100%; }
+    .hero-badge { font-size: 0.65rem; padding: 6px 12px; margin-bottom: 16px; }
+    .nav-cta { font-size: 0.7rem; padding: 7px 10px; }
+    .nav-brand-name { font-size: 0.78rem; }
     .hero-badge { font-size: 0.7rem; padding: 6px 14px; }
     .hero-trust-row { gap: 8px; }
     .trust-pill { font-size: 0.75rem; padding: 6px 12px; }
@@ -1154,10 +1159,10 @@
     <h1>
       Tampa Bay's Most Trusted<br>
       <span class="accent-cyan">Cleaning Pros.</span><br>
-      <span class="accent-green" style="display:block;white-space:nowrap;font-size:clamp(1rem, 3.5vw, 2.2rem);text-align:center;">Residential · Commercial · Disinfecting</span>
+      <span class="accent-green" style="display:block;font-size:clamp(0.9rem, 4vw, 2.2rem);text-align:center;white-space:nowrap;transform:scale(min(1, calc(100vw / 400)));transform-origin:center;">Residential · Commercial · Disinfecting</span>
     </h1>
 
-    <p class="hero-sub">
+    <p class="hero-sub" style="width:100%;max-width:100%;padding:0 8px;">
       Serving all of Pinellas &amp; Hillsborough County.<br><br>Background-checked, insured professionals who clean your home or business like it's their own. Get your custom quote in seconds — our Smart Quote System pulls your square footage automatically.
     </p>
 
@@ -1256,10 +1261,7 @@
 <div class="quote-callout" id="quote-cta" aria-label="Quote callout">
   <h2>Ready for a Spotless Home or Office?</h2>
   <p>Call or text us at <a href="tel:7276192727" style="color:white;font-weight:800;">(727) 619-2727</a> and we'll get you a custom price fast — no forms, no waiting. </p>
-  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-    <a href="tel:7276192727" class="btn-white">📞 Call or Text for a Quote</a>
-    <a href="tel:7276192727" class="btn-white" style="background:var(--yellow);color:var(--navy);">📞 Call or Text Us Instantly</a>
-  </div>
+  <a href="tel:7276192727" class="btn-white" style="background:var(--yellow);color:var(--navy);">📞 Call or Text Us Instantly</a>
 </div>
 
 <!-- REVIEWS -->
