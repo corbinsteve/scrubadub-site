@@ -20,6 +20,18 @@ COPY house-cleaning-oldsmar.html /usr/share/nginx/html/house-cleaning-oldsmar.ht
 COPY house-cleaning-indian-rocks-beach.html /usr/share/nginx/html/house-cleaning-indian-rocks-beach.html
 COPY house-cleaning-new-port-richey.html /usr/share/nginx/html/house-cleaning-new-port-richey.html
 COPY house-cleaning-kenneth-city.html /usr/share/nginx/html/house-cleaning-kenneth-city.html
+COPY house-cleaning-tampa.html /usr/share/nginx/html/house-cleaning-tampa.html
+COPY house-cleaning-south-tampa.html /usr/share/nginx/html/house-cleaning-south-tampa.html
+COPY house-cleaning-hyde-park-davis-islands.html /usr/share/nginx/html/house-cleaning-hyde-park-davis-islands.html
+COPY house-cleaning-westchase.html /usr/share/nginx/html/house-cleaning-westchase.html
+COPY house-cleaning-town-n-country.html /usr/share/nginx/html/house-cleaning-town-n-country.html
+COPY house-cleaning-carrollwood.html /usr/share/nginx/html/house-cleaning-carrollwood.html
+COPY house-cleaning-citrus-park.html /usr/share/nginx/html/house-cleaning-citrus-park.html
+COPY house-cleaning-new-tampa.html /usr/share/nginx/html/house-cleaning-new-tampa.html
+COPY house-cleaning-wesley-chapel.html /usr/share/nginx/html/house-cleaning-wesley-chapel.html
+COPY house-cleaning-lutz.html /usr/share/nginx/html/house-cleaning-lutz.html
+COPY house-cleaning-land-o-lakes.html /usr/share/nginx/html/house-cleaning-land-o-lakes.html
+COPY house-cleaning-temple-terrace.html /usr/share/nginx/html/house-cleaning-temple-terrace.html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
