@@ -2,7 +2,8 @@ FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/index.html
 COPY robots.txt /usr/share/nginx/html/robots.txt
 COPY sitemap.xml /usr/share/nginx/html/sitemap.xml
-COPY logo.png /usr/share/nginx/html/logo.png
+COPY logo.webp /usr/share/nginx/html/logo.webp
+COPY owner-photo.webp /usr/share/nginx/html/owner-photo.webp
 COPY house-cleaning-st-petersburg.html /usr/share/nginx/html/house-cleaning-st-petersburg.html
 COPY house-cleaning-clearwater.html /usr/share/nginx/html/house-cleaning-clearwater.html
 COPY house-cleaning-largo.html /usr/share/nginx/html/house-cleaning-largo.html
